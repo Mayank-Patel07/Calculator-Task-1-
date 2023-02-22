@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5%;
+    background-color: rgb(136, 133, 133);
+}
+
+#Heading {
+    text-align: center;
+    text-shadow: 5px 5px 10px white;
+    font-size: 7vh;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+#image {
+    height: 440px;
+    border: 2px solid white;
+    border-radius: 18px;
+}
+
+#caption {
+    font-size: 17px;
+    color: black;
+    text-align: center;
+}
+
+div#Info {
+    padding: 25px 25px;
+    margin: 11px;
+    margin-top: 1px;
+}
+
+h1.Heading {
+    background: #CF7234;
+    background: linear-gradient(to right, #CF7234 0%, #FFFFFF 47%, #2BCF57 71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 12px;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: black;
+}
