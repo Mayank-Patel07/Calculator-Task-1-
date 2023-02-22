@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Shantell+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Labrada:wght@200&family=Shantell+Sans&display=swap');
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	/* font-family: 'Gloock', serif; */
+	/* font-family: 'Labrada', serif; */
+	font-family: 'Shantell Sans', cursive;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: rgb(71, 161, 245);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	/* background-color: rgb(9, 9, 121);
+	background: linear-gradient(90deg, rgba(9, 9, 121, 1) 34%, rgba(34, 0, 255, 0.4632972873900293) 100%);
+	background-size: 100%;
+	background-repeat: repeat; */
+	background: -webkit-linear-gradient(#d6abab, #1c129c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+#Task-form {
+	display: flex;
+	;
+}
+
+input,
+button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: rgb(71, 67, 67);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	/* color: rgb(71, 67, 67); */
+}
+
+#new-task-submit {
+	color: rgb(231, 209, 209);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-color: rgb(71, 67, 67);
+	cursor: pointer;
+	transition: 0.4s;
+	border-radius: 12px;
+	width: 74px;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.List {
+	padding: 1rem;
+}
+
+.List h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: rgb(71, 67, 67);
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	color: rgb(71, 67, 67);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: rgb(71, 67, 67);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: rgb(71, 67, 67);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	color: rgb(71, 67, 67);
+}
+
+.task .actions .delete {
+	color: rgb(71, 67, 67);
+}
+
+@media only screen and (min-width: 480px) {
+	#new-task-input {
+		width: 30%;
+	}
+}
